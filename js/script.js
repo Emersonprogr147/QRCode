@@ -23,3 +23,11 @@ function generetiQrCode(){
 qrCodeBtn.addEventListener("click",() =>{
 generetiQrCode();
 });
+
+qrCodeInput.addEventListener("keydown",(e) =>{
+   
+    if(e.code === "Enter") {
+      generetiQrCode();
+
+    }
+    });
